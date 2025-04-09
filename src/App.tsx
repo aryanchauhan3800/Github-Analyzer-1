@@ -6,14 +6,7 @@ import { fetchUserRepos, fetchRepoCommits } from "./lib/github";
 import { groupCommitsByDate } from "./utils/chart";
 import { Skeleton } from "@/components/ui/skeleton";
 import { Footer } from "./components/Footer";
-import { useState } from "react";
-import { UserSearch } from "./components/UserSearch";
-import { RepoList } from "./components/RepoList";
-import { CommitChart } from "./components/CommitChart";
-import { fetchUserRepos, fetchRepoCommits } from "./lib/github";
-import { groupCommitsByDate } from "./utils/chart";
-import { Skeleton } from "@/components/ui/skeleton";
-import { Footer } from "./components/Footer";
+
 function App() {
   const [repos, setRepos] = useState<any[]>([]);
   const [chartData, setChartData] = useState<Record<string, number>>({});
@@ -61,6 +54,6 @@ function App() {
     </div>
   );
 }
-export default App;
 
 export default App;
+
